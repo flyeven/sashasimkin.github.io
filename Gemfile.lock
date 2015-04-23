@@ -70,5 +70,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  jekyll
   jekyll-archives
   jekyll-sitemap
