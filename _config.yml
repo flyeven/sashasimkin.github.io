@@ -1,0 +1,28 @@
+# Site settings
+title: Александр Симкин
+email: sashasimkin@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Блог Симкина Александра, тут я могу писать о чём захочу, но в основном программирование и что-то забавное.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://sima.pro" # the base hostname & protocol for your site
+twitter_username: sashasimkin
+github_username:  sashasimkin
+permalink: /:year/:month/:day/:title.html
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+jekyll-archives:
+  enabled: all
+  layout: 'archive'
+  permalinks:
+    year: '/:year/'
+    month: '/:year/:month/'
+    day: '/:year/:month/:day/'
+    tag: '/t/:name/'
+    category: '/c/:name/'
+
+# Build settings
+gems:
+  - jekyll-archives
+markdown: kramdown
