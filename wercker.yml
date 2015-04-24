@@ -30,17 +30,17 @@ build:
         #    name: rspec
         #    code: bundle exec rspec
 deploy:
-  steps:
-  - add-to-known_hosts:
-      hostname: $SITE_DOMAIN
-  - mktemp:
-      envvar: PRIVATEKEY_PATH
-  - create-file:
-      name: write key
-      filename: $PRIVATEKEY_PATH
-      content: $SSH_KEY_PRIVATE
-      overwrite: true
-      hide-from-log: true
-  - script:
-    name: rsync site
-    code: rsync -avz -e --prune-empty-dirs "ssh -i $PRIVATEKEY_PATH" $SSH_USER@$SITE_DOMAIN:$REMOTE_DIR $WERCKER_ROOT/_site/
+    steps:
+        - add-to-known_hosts:
+            hostname: $SITE_DOMAIN
+        - mktemp:
+            envvar: PRIVATEKEY_PATH
+        - create-file:
+            name: write key
+            filename: $PRIVATEKEY_PATH
+            content: $SSH_KEY_PRIVATE
+            overwrite: true
+            hide-from-log: true
+        - script:
+          name: rsync site
+          code: rsync -avz -e --prune-empty-dirs "ssh -i $PRIVATEKEY_PATH" $SSH_USER@$SITE_DOMAIN:$REMOTE_DIR $WERCKER_ROOT/_site/
