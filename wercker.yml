@@ -31,6 +31,11 @@ build:
         #    code: bundle exec rspec
 deploy:
     steps:
+        - script:
+            name: touch known_hosts_file
+            code: |
+                touch /etc/ssh/ssh_known_hosts
+                chmod 0644 /etc/ssh/ssh_known_hosts
         - add-to-known_hosts:
             hostname: $SITE_DOMAIN
         - mktemp:
