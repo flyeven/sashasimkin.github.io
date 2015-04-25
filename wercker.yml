@@ -43,4 +43,4 @@ deploy:
             hide-from-log: true
         - script:
             name: rsync site
-            code: rsync -avz --prune-empty-dirs -e "ssh -i $PRIVATEKEY_PATH" $WERCKER_ROOT/_site/ $SSH_USER@$SITE_DOMAIN:$REMOTE_DIR
+            code: rsync -avz --delete-after --force --prune-empty-dirs -e "ssh -i $PRIVATEKEY_PATH" $WERCKER_ROOT/_site/ $SSH_USER@$SITE_DOMAIN:$REMOTE_DIR
