@@ -4,6 +4,7 @@ title:  "UnicodeEncodeError при FileField.save"
 date:   2014-04-25 10:13:10
 categories: python django
 tags:  programming
+permalink: /16.unicodeencodeerror-pri-filefieldsave.html
 ---
 
 Если вы столкнулись с похожей ошибкой:

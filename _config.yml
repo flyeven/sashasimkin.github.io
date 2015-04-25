@@ -11,6 +11,7 @@ permalink: /:year/:month/:day/:title.html
 exclude:
   - Gemfile
   - Gemfile.lock
+  - wercker.yml
 
 jekyll-archives:
   enabled: all
@@ -25,4 +26,5 @@ jekyll-archives:
 # Build settings
 gems:
   - jekyll-archives
+  - jekyll-sitemap
 markdown: kramdown

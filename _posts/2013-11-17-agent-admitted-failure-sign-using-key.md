@@ -4,6 +4,7 @@ title:  "Agent admitted failure to sign using the key"
 date:   2013-11-17 22:17:13
 categories: ubuntu tip
 tags: ssh linux ssh-agent
+permalink: /12.agent-admitted-failure-sign-using-key.html
 ---
 
 Если при подключении к ssh-серверу вы получаете ошибку:

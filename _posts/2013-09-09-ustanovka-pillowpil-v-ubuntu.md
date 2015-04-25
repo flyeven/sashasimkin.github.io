@@ -3,6 +3,7 @@ layout: post
 title:  "Установка Pillow/Pil в Ubuntu, Windows"
 date:   2013-09-09 21:48:47
 categories: python ubuntu tip
+permalink: /11.ustanovka-pillowpil-v-ubuntu.html
 ---
 
 Чтоб не искать каждый раз, сохраню.

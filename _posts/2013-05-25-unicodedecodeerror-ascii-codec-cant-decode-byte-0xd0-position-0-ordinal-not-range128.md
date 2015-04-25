@@ -3,6 +3,7 @@ layout: post
 title:  "UnicodeDecodeError 'ascii' codec can't decode byte 0xd0 in position 0: ordinal not in range(128)"
 date:   2013-09-08 14:52:25
 categories: python django
+permalink: /9.unicodedecodeerror-ascii-codec-cant-decode-byte-0xd0-position-0-ordinal-not-range128.html
 ---
 
 Всплыла сегодня такая ошибка при редактировании модели в админке Django.

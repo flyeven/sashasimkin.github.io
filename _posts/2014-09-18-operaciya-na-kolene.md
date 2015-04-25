@@ -3,6 +3,7 @@ layout: post
 title:  "Операция на ПКС"
 date:   2014-09-18 1:34:59
 categories: blog
+permalink: /19.operaciya-na-kolene.html
 ---
 
 Всё таки сделал операцию на колене, после третьего опиздюливания-то.

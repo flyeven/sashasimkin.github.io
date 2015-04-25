@@ -5,7 +5,7 @@ layout: default
 
   <h1 class="page-heading">Посты в категории {{ page.type }} "{{ page.title }}"</h1>
 
-  <ul class="post-archives">
+  <ul class="post-list">
     {% for post in page.posts %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.categories %} • {{ post.categories | join: ', ' }}{% endif %}</span>
