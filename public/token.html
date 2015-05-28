@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<head>
+	<title>Привет! :-)</title>
+</head>
+<body>
+	<h2>Скопируйте текст из этого поля в консоль:<br>
+	<input type="text" style="width: 100%;font-size: 16px;line-height: 24px;" id="token">
+</body>
+<script type="text/javascript">
+    window.onload = function () {
+    	document.getElementById('token').value = document.location.hash.slice(1).split('&')[0].split('=')[1];
+    };
+</script>
