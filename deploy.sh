@@ -1,3 +1,4 @@
+#!/bin/bash
 set -ex
 eval "$(ssh-agent -s)"
 chmod 600 deploy_key
