@@ -11,8 +11,9 @@ mv $TMPDIR/${TRAVIS_BUILD_ID}_built_site/* $TRAVIS_BUILD_DIR
 git config user.email "sashasimkin+travis@gmail.com"
 git config user.name "Travis CI"
 git diff
-# git add . --all
-# git commit -m "Generated from build: $TRAVIS_BUILD_ID triggered by commit $TRAVIS_COMMIT"
-# git config --global push.default simple
+git add . --all
+git commit -m "Generated from build: $TRAVIS_BUILD_ID triggered by commit $TRAVIS_COMMIT"
+git config --global push.default simple
+git status
 # git push origin master
 
