@@ -14,4 +14,5 @@ git add . --all
 git commit -m "Generated from build: $TRAVIS_BUILD_ID triggered by commit $TRAVIS_COMMIT"
 git config --global push.default simple
 git show
+git remote set-url origin "git@github.com:$TRAVIS_REPO_SLUG.git"
 git push origin master
