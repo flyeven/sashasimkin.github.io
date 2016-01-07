@@ -1,4 +1,6 @@
+.idea/
 _site/
+.bundle/
 .sass-cache/
 .idea/
 .bundle/
