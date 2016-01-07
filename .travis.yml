@@ -8,12 +8,12 @@ env:
   global:
     - TMPDIR=/tmp
 script: bundle exec jekyll build
-#after_success: sh deploy.sh
-deploy:
-  provider: script
-  script: deploy.sh
-  on:
-    branch: source
+after_success: sh deploy.sh
+#deploy:
+#  provider: script
+#  script: deploy.sh
+#  on:
+#    branch: source
 before_install:
 - openssl aes-256-cbc -K $encrypted_5474a7e89bab_key -iv $encrypted_5474a7e89bab_iv
   -in deploy_key.enc -out deploy_key -d
