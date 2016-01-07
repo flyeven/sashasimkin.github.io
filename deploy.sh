@@ -8,7 +8,7 @@ git checkout master
 rm -rf *
 ls -la
 ls -la "$TMPDIR/${TRAVIS_BUILD_ID}_built_site"
-mv "$TMPDIR/${TRAVIS_BUILD_ID}_built_site/*" "$TRAVIS_BUILD_DIR"
+mv $TMPDIR/${TRAVIS_BUILD_ID}_built_site/* $TRAVIS_BUILD_DIR
 git config user.email "sashasimkin+travis@gmail.com"
 git config user.name "Travis CI"
 ls -la
