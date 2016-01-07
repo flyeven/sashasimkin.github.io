@@ -13,6 +13,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - wercker.yml
+  - vendor
 
 jekyll-archives:
   enabled: all
