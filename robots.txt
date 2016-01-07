@@ -1,5 +1,1 @@
----
----
-User-agent: *
-Allow: *
-Host: {{ site.url | split:"://" | last }}
+User-agent: * Allow: * Host: sima.pro
